@@ -29,15 +29,15 @@ def alarmClock(setTime):
             break
         time.sleep(.5)
         currenttime = str(time.asctime())
-        
+
     print("loop broken! ALARM GOING OFF!")
     time.sleep(1)
 
-    webbrowser.open(site,0,True)    
-    
+    webbrowser.open(site,0,True)
+
 
 def setAlarm():
-    setTime = 'day mth 00 00:00:00'
+    setTime = 'day mth 00 00:00:00 YEAR'
     day = input('input day of month. (if last day of month, add 1 to last day. if no input, then tommorrow will be assumed): \n\t')
     if day == '':
         day = str(int(currenttime[8:10])+1)
@@ -61,7 +61,7 @@ def setAlarm():
     elif len(second)==1:
         second = '0'+second
 
-    setTime = '        '+day+' '+hour+':'+minute+':'+second
+    setTime = '        '+day+' '+hour+':'+minute+':'+second+' '+'YEAR'
     alarmClock(setTime)
 
 
