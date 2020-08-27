@@ -3,17 +3,18 @@ import time
 import webbrowser
 
 #####SONG LINKS#####
-finish_him = "https://www.youtube.com/watch?v=lCCESmq9-vs"
+Finish_Him = "https://www.youtube.com/watch?v=lCCESmq9-vs"
 Anime = "https://www.youtube.com/watch?v=3YPRGVIX5TM"
 MotionRide_Metal = "https://www.youtube.com/watch?v=JSYmw8HPWoU"
 MotionRide_WhatHappened = "https://www.youtube.com/watch?v=PTQCK1Lmq2Q"
+Albatros = "https://music.youtube.com/watch?v=pw3ngo2Y4lU&list=RDMM0FCvzsVlXpQ"
 
 #####GLOBAL VARIABLES#####
 global currenttime
 currenttime= str(time.asctime())
 
 #####WEBSITE VARIABLE#####
-site = MotionRide_WhatHappened
+site = Albatros
 
 #####ALARM TIME#####
 #setTime = '### mar 19 08:15:00'
